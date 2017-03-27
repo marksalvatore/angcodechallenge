@@ -1,0 +1,28 @@
+<div class = "home" ng-hide="vm.overlayme">
+
+	<!-- GET CATEGORIES
+	<button class="btn btn-primary" ng-click="vm.getCategories()" ng-hide="vm.categories">Get Categories</button> -->
+
+	<!-- CATEGORIES -->
+	<div class="categories" ng-show="vm.categories">
+		<h2>Course Categories</h2>
+		<div ng-class="{ 'selected' : vm.selectedCatIndex === $index }" ng-repeat="cat in vm.categories | orderBy: 'display_name'">
+			<a id="{{ cat.category_id }}" href="#" ng-click="vm.getCourses($index)" sort="{{ cat.sort_order }}">{{ cat.display_name }}</a>
+		</div>
+		<button class="btn btn-primary btn-sm logout" ng-click="vm.logout()">Logout</button>
+	</div>
+
+	<!-- COURSES -->
+	<div class="courses" ng-show="vm.courses">
+		<h2>Available Courses</h2>
+		<div ng-repeat="course in vm.courses | orderBy: 'display_name'">
+			{{ course.display_name }}
+		</div>
+	</div>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" ng-show="vm.overlayme">
+	<img src="images/anim-overlay.gif" />
+	<br><h1>Loading...</h1>
+</div>

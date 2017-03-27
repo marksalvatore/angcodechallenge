@@ -1,0 +1,19 @@
+<div class = "login" ng-hide="vm.overlayme">
+	<div class="wrapper">
+		<form method="post" class="form">
+	    <h3 class="form-heading">KelbyOne<br/>Photography Courses</h3>
+
+		  <input type="text" placeholder="username" ng-model="vm.username" class="form-control" />
+		  <input type="password" placeholder="password" ng-model="vm.password" class="form-control" />
+
+		  <div class="alert alert-danger" ng-show="vm.feedback">Login credentials are incorrect!</div>
+
+		  <button class="btn btn-primary btn-block" ng-click="vm.login()">Login</button>
+		</form>
+	</div>
+</div>
+
+<div class="overlay" ng-show="vm.overlayme">
+	<img src="images/anim-overlay.gif" />
+	<br><h1>Loading...</h1>
+</div>

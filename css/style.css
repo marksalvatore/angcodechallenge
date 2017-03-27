@@ -1,0 +1,102 @@
+body {
+  background-color: #000; }
+
+.home, .login {
+  display: flex; }
+
+.login {
+  align-items: center;
+  justify-content: center;
+  background: url("../images/bg-login.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  z-index: 10000;
+  display: block;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .overlay img {
+    display: block;
+    margin-top: 10%;
+    margin-left: 25%;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em; }
+  .overlay h1 {
+    color: #eeeeee; }
+
+.selected {
+  background-color: #ffac17;
+  color: white;
+  width: auto; }
+  .selected a:hover {
+    color: #eeeeee !important; }
+
+.categories, .courses {
+  color: #ffac17;
+  padding: 1em; }
+  .categories a, .courses a {
+    margin-left: .5em;
+    color: #eeeeee; }
+    .categories a:hover, .courses a:hover {
+      color: #ffac17; }
+
+.categories {
+  margin-left: 2em; }
+
+.courses {
+  border-left: 3px dashed #ffac17;
+  margin-top: 3em;
+  margin-left: 2em; }
+  .courses h2 {
+    color: #eeeeee;
+    font-size: 1.2em; }
+
+.logout {
+  margin: 1em; }
+
+.wrapper {
+  margin-top: 4em;
+  margin-bottom: 1em; }
+
+.form {
+  padding: 2em;
+  margin: 0 auto;
+  border: 3px dotted #ffac17; }
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 2em;
+  color: white; }
+
+.form-control {
+  position: relative;
+  font-size: 1.2em;
+  height: auto;
+  padding: .5em; }
+
+input[type="text"] {
+  margin-bottom: .2em; }
+
+input[type="password"] {
+  margin-bottom: 1.2em; }
+
+.btn-primary {
+  color: #eeeeee;
+  background-color: #ffac17;
+  border-color: #ffac17; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  color: #000;
+  background-color: #eeeeee;
+  border-color: #eeeeee; }
